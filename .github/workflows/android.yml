@@ -20,7 +20,8 @@ jobs:
         distribution: 'temurin'
         cache: gradle
         
+    - workdir: /DuerOS-Launcher
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
-      run: bash ./DuerOS-Launcher/build-app-headunit-portrait-open.sh --warning-mode all
+      run: bash ./DuerOS-Launcher/build-app-headunit-portrait-open.sh
