@@ -9,9 +9,6 @@ on:
 jobs:
   build:
 
-env:
-  WORKDIR: ./DuerOS-Launcher/
-
     steps:
     - uses: actions/checkout@v3
     - name: set up JDK 11
@@ -20,7 +17,10 @@ env:
         java-version: '11'
         distribution: 'temurin'
         cache: gradle
-        
+
+env:
+  WORKDIR: ./DuerOS-Launcher/
+  
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
