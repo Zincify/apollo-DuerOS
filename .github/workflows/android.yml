@@ -21,6 +21,6 @@ jobs:
         cache: gradle
 
     - name: Grant execute permission for gradlew
-      run: ./DuerOS-Launcher/build-app-headunit-portrait-open.sh
+      run: chmod +x gradlew
     - name: Build with Gradle
       run: ./DuerOS-Launcher/build-app-headunit-portrait-open.sh
