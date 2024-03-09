@@ -23,4 +23,4 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
-      run: bash ./DuerOS-Launcher/build-app-headunit-portrait-open.sh
+      run: bash build-app-headunit-portrait-open.sh
